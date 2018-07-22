@@ -9,7 +9,7 @@ Twitter:
 npm install twitter
 
 Spotify:
-npm instal spotify
+npm install spotify
 
 Request:
 npm install request
