@@ -16,7 +16,7 @@ var argument = "";
 
 // Determine the action and require specific data
 
-askedToDo();
+askedToDo(action, argument);
 
 function askedToDo(action, argument) {
 
@@ -109,7 +109,7 @@ function getMyTweets() {
 
 // SPOTIFY
 
-function chosenSong() {
+function chosenSong(songTitle) {
 
     // retrieve information about the song
     spotify.search({
@@ -158,7 +158,7 @@ function theDefaultSong() {
 }
 
 //  Display data for the movie requested by the user
-function getUserMovie() {
+function getUserMovie(movieName) {
 
     // run a request to the OMDB API
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";

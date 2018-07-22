@@ -19,6 +19,9 @@
   "homepage": "https://github.com/ilkovs/liri-node-app#readme",
   "dependencies": {
     "dotenv": "^6.0.0",
-    "node-spotify-api": "^1.0.7"
+    "node-spotify-api": "^1.0.7",
+    "simple-node-logger": "^0.93.37",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.1"
   }
 }

@@ -1,0 +1,10 @@
+19:14:10.086 INFO  Title: Titanic
+Year: 1997
+IMDB Rating of the Movie: 7.8
+Rotten Tomatoes Rating of the Movie undefined
+Country where the Movie was produced: USA
+Language of the Movie: English, Swedish
+Plot of the Movie: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors in the Movie: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates 
+19:16:52.360 INFO  http://www.omdbapi.com/?t=mr.nobody&y=&plot=short&apikey=trilogy 
+19:18:44.689 INFO  [{"code":89,"message":"Invalid or expired token."}] 
