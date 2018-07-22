@@ -63,7 +63,7 @@ function askedToDo(action, argument) {
     }
 }
 
-// Returns optional third argument, for example,
+// Returns optional third argument
 function getThirdArgument() {
 
     // Stores all possible arguments in array.
