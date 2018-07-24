@@ -8,3 +8,20 @@ Plot of the Movie: A seventeen-year-old aristocrat falls in love with a kind but
 Actors in the Movie: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates 
 19:16:52.360 INFO  http://www.omdbapi.com/?t=mr.nobody&y=&plot=short&apikey=trilogy 
 19:18:44.689 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+20:06:43.076 INFO  Title: Scarface
+Year: 1983
+IMDB Rating of the Movie: 8.3
+Rotten Tomatoes Rating of the Movie undefined
+Country where the Movie was produced: USA
+Language of the Movie: English, Spanish
+Plot of the Movie: In Miami in 1980, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.
+Actors in the Movie: Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio 
+20:10:54.334 INFO  http://www.omdbapi.com/?t=mr.nobody&y=&plot=short&apikey=trilogy 
+20:15:14.240 INFO  Title: Mr. Nobody
+Year: 2009
+IMDB Rating of the Movie: 7.9
+Rotten Tomatoes Rating of the Movie undefined
+Country where the Movie was produced: Belgium, Germany, Canada, France, USA, UK
+Language of the Movie: English, Mohawk
+Plot of the Movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors in the Movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham 

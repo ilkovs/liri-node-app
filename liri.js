@@ -186,8 +186,20 @@ function getUserMovie(movieName) {
 
 function getDefaultMovie() {
     var queryUrl = "http://www.omdbapi.com/?t=mr.nobody&y=&plot=short&apikey=trilogy";
-    logOutput(queryUrl);
+
+    request(queryUrl, function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+
+    logOutput("Title: " + JSON.parse(body).Title + "\n" + "Year: " + JSON.parse(body).Year + "\n" +
+    "IMDB Rating of the Movie: " + JSON.parse(body).imdbRating + "\n" + "Rotten Tomatoes Rating of the Movie " +
+    JSON.parse(body).tomatoRating + "\n" + "Country where the Movie was produced: " + JSON.parse(body).Country + "\n" +
+    "Language of the Movie: " + JSON.parse(body).Language + "\n" + "Plot of the Movie: " + JSON.parse(body).Plot +
+    "\n" + "Actors in the Movie: " + JSON.parse(body).Actors);
+}else {
+    console.log("Something is wrong.");
 }
+    })
+};
 
 
 // create log.txt file and console log the output
