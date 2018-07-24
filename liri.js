@@ -1,9 +1,9 @@
 require("dotenv").config();
 
 var keys = require("./key.js");
-
+console.log("keys! ....", keys);
 var Twitter = require("twitter");
-var spotify = require("spotify");
+var Spotify = require("node-spotify-api");
 
 var fs = require("fs");
 var filename = './log.txt';
@@ -80,9 +80,9 @@ function getThirdArgument() {
 // TWITTER
 
 function getMyTweets() {
-
-    // Passes Twitter keys into call to Twitter API.
-    var user = new Twitter(keys.twitterKeys);
+    console.log("inside of getMyTweets....");
+    // Passes Twitter keys int o call to Twitter API.
+    var user = new Twitter(keys.twitter);
 
     // Search for 20 tweets
     var parameters = {
@@ -91,8 +91,10 @@ function getMyTweets() {
 
     // Shows my tweets
     user.get("search/tweets", parameters, function (error, tweets, response) {
+        console.log("we hit twitter!")
         if (!error) {
             // Loop through tweets and print them with date
+            console.log("response: ", response)
             for (var i = 0; i < tweets.length; i++) {
                 var tweetText = tweets.statuses[i].text;
                 logOutput("Tweet Text: " + tweetText);
@@ -110,6 +112,7 @@ function getMyTweets() {
 // SPOTIFY
 
 function chosenSong(songTitle) {
+    var spotify = new Spotify(keys.spotify);
 
     // retrieve information about the song
     spotify.search({
@@ -143,13 +146,16 @@ function chosenSong(songTitle) {
 
 // Prints the default song "The Sign" by Ace of Base
 function theDefaultSong() {
-    spotify.lookup({ type: 'track', id: '3DYVWvPh3kGwPasp7yjahc' }, function (err, data) {
+    var spotify = new Spotify(keys.spotify);
+    spotify.search({ type: 'track', query: 'The Sign' }, function (err, data) {
         if (err) {
-            logOutput.error(err);
+            logOutput(err);
             return
         }
 
         // Prints the artist, song name, preview link, and album name.
+        console.log("data!", JSON.stringify(data));
+
         logOutput("Artist: " + data.artists[0].name);
         logOutput("Song: " + data.name);
         logOutput("Spotify Preview URL: " + data.preview_url);
@@ -206,7 +212,7 @@ function getDefaultMovie() {
 function writeItDown() {
     fs.readFile("log.txt", "utf8", function (err, data) {
         if (err) {
-            logOutput.error(err);
+            logOutput(err);
         }
         else {
 
