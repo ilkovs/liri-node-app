@@ -121,7 +121,7 @@ function chosenSong(songTitle) {
     },
         function (err, data) {
             if (err) {
-                logOutput.error(err);
+                logOutput(err);
                 return
             }
             var artistArray = data.tracks.items[0].album.artists;
@@ -131,7 +131,7 @@ function chosenSong(songTitle) {
 
             // Create an array to push the artists
             for (var i = 0; i < artistArray.length; i++) {
-                artistName.push(artistArray[i].name);
+                artistNames.push(artistArray[i].name);
             }
             // Converts artists array to string, and makes it understandable.
             var artists = artistsNames.join(", ");

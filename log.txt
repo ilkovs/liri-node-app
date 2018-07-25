@@ -94,3 +94,79 @@ TypeError: Cannot read property '0' of undefined
     at runCallback (timers.js:794:20)
     at tryOnImmediate (timers.js:752:5)
     at processImmediate [as _immediateCallback] (timers.js:729:5) 
+19:03:26.693 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:13:42.386 INFO  artistName is not defined
+ReferenceError: artistName is not defined
+    at C:\Users\Sam\liri-node-app\liri.js:134:17
+    at C:\Users\Sam\liri-node-app\node_modules\node-spotify-api\dist\index.js:1:1226
+    at tryCatcher (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5) 
+19:14:04.034 INFO  artistNames is not defined
+ReferenceError: artistNames is not defined
+    at C:\Users\Sam\liri-node-app\liri.js:134:17
+    at C:\Users\Sam\liri-node-app\node_modules\node-spotify-api\dist\index.js:1:1226
+    at tryCatcher (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5) 
+19:18:55.620 INFO  Title: undefined
+Year: undefined
+IMDB Rating of the Movie: undefined
+Rotten Tomatoes Rating of the Movie undefined
+Country where the Movie was produced: undefined
+Language of the Movie: undefined
+Plot of the Movie: undefined
+Actors in the Movie: undefined 
+19:19:18.456 INFO  Title: Titanic
+Year: 1997
+IMDB Rating of the Movie: 7.8
+Rotten Tomatoes Rating of the Movie undefined
+Country where the Movie was produced: USA
+Language of the Movie: English, Swedish
+Plot of the Movie: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors in the Movie: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates 
+19:19:36.071 INFO  Title: Mr. Nobody
+Year: 2009
+IMDB Rating of the Movie: 7.9
+Rotten Tomatoes Rating of the Movie undefined
+Country where the Movie was produced: Belgium, Germany, Canada, France, USA, UK
+Language of the Movie: English, Mohawk
+Plot of the Movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors in the Movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham 
+19:21:30.320 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:22:39.408 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:23:45.419 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:26:50.304 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:29:23.104 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:32:22.539 INFO  [{"code":89,"message":"Invalid or expired token."}] 
+19:36:03.446 INFO  Cannot read property '0' of undefined
+TypeError: Cannot read property '0' of undefined
+    at C:\Users\Sam\liri-node-app\liri.js:159:44
+    at C:\Users\Sam\liri-node-app\node_modules\node-spotify-api\dist\index.js:1:1226
+    at tryCatcher (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Sam\liri-node-app\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5) 
