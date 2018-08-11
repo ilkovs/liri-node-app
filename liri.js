@@ -1,7 +1,6 @@
 require("dotenv").config();
 
 var keys = require("./key.js");
-console.log("keys! ....", keys);
 var Twitter = require("twitter");
 var Spotify = require("node-spotify-api");
 
@@ -80,7 +79,7 @@ function getThirdArgument() {
 // TWITTER
 
 function getMyTweets() {
-    console.log("inside of getMyTweets....");
+    //console.log("inside of getMyTweets....");
     // Passes Twitter keys int o call to Twitter API.
     var user = new Twitter(keys.twitter);
 
@@ -90,15 +89,14 @@ function getMyTweets() {
     };
 
     // Shows my tweets
-    user.get("search/tweets", parameters, function (error, tweets, response) {
-        console.log("we hit twitter!")
+    user.get("statuses/user_timeline", parameters, function (error, tweets, response) {
+        // console.log("we hit twitter!")
         if (!error) {
             // Loop through tweets and print them with date
-            console.log("response: ", response)
             for (var i = 0; i < tweets.length; i++) {
-                var tweetText = tweets.statuses[i].text;
+                var tweetText = tweets[i].text;
                 logOutput("Tweet Text: " + tweetText);
-                var tweetDate = tweets.statuses[i].created_at;
+                var tweetDate = tweets[i].created_at;
                 logOutput("Tweet creation Date: " + tweetDate);
             }
         } else {
@@ -131,7 +129,7 @@ function chosenSong(songTitle) {
 
             // Create an array to push the artists
             for (var i = 0; i < artistArray.length; i++) {
-                artistNames.push(artistArray[i].name);
+                artistsNames.push(artistArray[i].name);
             }
             // Converts artists array to string, and makes it understandable.
             var artists = artistsNames.join(", ");
@@ -156,10 +154,10 @@ function theDefaultSong() {
         // Prints the artist, song name, preview link, and album name.
         console.log("data!", JSON.stringify(data));
 
-        logOutput("Artist: " + data.artists[0].name);
-        logOutput("Song: " + data.name);
-        logOutput("Spotify Preview URL: " + data.preview_url);
-        logOutput("Album Name: " + data.album.name);
+        logOutput("Artist: " + artists);
+        logOutput("Song: " + data.tracks.items[o].name);
+        logOutput("Spotify Preview URL: " + data.tracks.items[0].preview_url);
+        logOutput("Album Name: " + data.tracks.items[0].album.name);
     });
 }
 
